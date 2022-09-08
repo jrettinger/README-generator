@@ -1,7 +1,7 @@
 {
   "name": "readme-generator",
   "version": "1.0.0",
-  "description": "",
+  "description": "A README generator that can quickly create a professional README for a new project",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,7 +11,7 @@
     "url": "git+https://github.com/jrettinger/README-generator.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Jason Rettinger",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/jrettinger/README-generator/issues"

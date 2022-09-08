@@ -33,8 +33,30 @@ const questions = [
         name: "license",
         type: "checkbox",
         message: "What kind of license does your project have?",
-        choices: ["MIT", "APACHE 2.0", "GPL 3.0", "BSD 3", "None"]
+        choices: ["MIT", "APACHE 2.0", "GPL 3.0", "BSD 3", "Drivers"]
       },
+
+      {
+        name: 'description',
+        type: 'input',
+        message: 'Please write a short description of your project.'
+    },
+
+    {
+        name: 'install',
+        type: 'input',
+        message: 'Please provide an explanation on how to install the project.'
+    },
+    {
+        name: 'usage',
+        type: 'input',
+        message: 'Please provide an explanation on how to use this project.'
+    },
+    {
+        name: 'contributor',
+        type: 'input',
+        message: 'How can the user contribute to the repository?'
+    },
 
     
 ];
