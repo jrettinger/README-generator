@@ -15,7 +15,7 @@ function renderLicenseBadge(license) {
  else if (data.license == "BSD 3") {
   return '![BSD 3] https://img.shields.io/badge/license-BSD3.0-green)'; 
 }
- else if (data.license == "Drivers") {
+ else if (data.license == "None") {
   return ''; 
  }
 };
@@ -25,14 +25,14 @@ function renderLicenseBadge(license) {
 function renderLicenseLink(license) {
 
   function renderLicenseLink(license) {
-    if (license === "Apache 2.0") {
-      return`(https://opensource.org/licenses/Apache-2.0)`
-    } else if (license === "MIT"){
-      return `(https://opensource.org/licenses/MIT)`
-    } else if (license === "The Perl License"){
-      return `(https://opensource.org/licenses/Artistic-2.0)` 
-    } else if (license === "GNU GPLv3") {
-      return `(https://www.gnu.org/licenses/gpl-3.0)`
+    if (license === "MIT") {
+      return`(https://choosealicense.com/licenses/mit)`
+    } else if (license === "APACHE 2.0"){
+      return `(https://choosealicense.com/licenses/apache-2.0)`
+    } else if (license === "GPL 3.0"){
+      return `(https://choosealicense.com/licenses/gpl-3.0)` 
+    } else if (license === "BSD 3") {
+      return `(https://choosealicense.com/licenses/bsd-3-clause)`
     }else if (license === "None") {
       return ""
     }
@@ -46,6 +46,7 @@ function renderLicenseSection(license) {}
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
+  
   ${renderLicenseBadge(data.license)}
 
   ## Description

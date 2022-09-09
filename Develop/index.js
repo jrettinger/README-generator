@@ -34,7 +34,7 @@ const questions = [
         name: "license",
         type: "checkbox",
         message: "What kind of license does your project have?",
-        choices: ["MIT", "APACHE 2.0", "GPL 3.0", "BSD 3", "Drivers"]
+        choices: ["MIT", "APACHE 2.0", "GPL 3.0", "BSD 3", "None"]
       },
 
       {
